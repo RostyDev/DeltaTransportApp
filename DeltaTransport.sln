@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeltaTransportApp", "DeltaTransportApp\DeltaTransportApp.csproj", "{9BB2CCD5-2A3A-409B-ACC2-F58BEFD6E82C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeltaTransportDB", "DeltaTransportDB\DeltaTransportDB.csproj", "{FACF90DD-4077-49FD-8AD9-4A5D5D99AFE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9BB2CCD5-2A3A-409B-ACC2-F58BEFD6E82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BB2CCD5-2A3A-409B-ACC2-F58BEFD6E82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BB2CCD5-2A3A-409B-ACC2-F58BEFD6E82C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FACF90DD-4077-49FD-8AD9-4A5D5D99AFE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FACF90DD-4077-49FD-8AD9-4A5D5D99AFE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FACF90DD-4077-49FD-8AD9-4A5D5D99AFE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FACF90DD-4077-49FD-8AD9-4A5D5D99AFE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

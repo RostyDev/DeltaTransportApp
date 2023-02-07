@@ -1,6 +1,6 @@
 ﻿namespace DeltaTransportApp
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.signinScreen1 = new DeltaTransportApp.SigninScreen();
+            this.SuspendLayout();
+            // 
+            // signinScreen1
+            // 
+            this.signinScreen1.BackColor = System.Drawing.Color.Gray;
+            this.signinScreen1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.signinScreen1.Location = new System.Drawing.Point(0, 0);
+            this.signinScreen1.Name = "signinScreen1";
+            this.signinScreen1.Size = new System.Drawing.Size(1137, 597);
+            this.signinScreen1.TabIndex = 0;
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.Color.Gray;
+            this.ClientSize = new System.Drawing.Size(1137, 597);
+            this.Controls.Add(this.signinScreen1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Name = "MainForm";
+            this.Text = "Delta Transport";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private SigninScreen signinScreen1;
     }
 }
 

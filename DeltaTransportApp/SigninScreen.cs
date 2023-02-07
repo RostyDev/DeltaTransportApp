@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace DeltaTransportApp
 {
-    public partial class MainForm : Form
+    public partial class SigninScreen : UserControl
     {
-        public MainForm()
+        public SigninScreen()
         {
             InitializeComponent();
+        }
+
+        private void btn_Signin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
