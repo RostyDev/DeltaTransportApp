@@ -19,7 +19,8 @@ namespace DeltaTransportApp
             InitializeComponent();
             Form1 = this;
 
-            nav.LoadSignin();
+            //nav.LoadSignin();
+            nav.LoadAanmeldScreen();
         }
     }
 }

@@ -25,8 +25,6 @@ namespace DeltaTransportApp
             SigninAPI.Password = tb_Password.Text;
             SigninAPI.Hash();
 
-            label3.Text = SigninAPI.HashedPassword.ToString();
-
             //SigninAPI.Signin();
 
             

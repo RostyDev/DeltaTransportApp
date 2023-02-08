@@ -91,7 +91,7 @@
             this.btn_Signin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Signin.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Signin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_Signin.Location = new System.Drawing.Point(75, 511);
+            this.btn_Signin.Location = new System.Drawing.Point(74, 497);
             this.btn_Signin.Name = "btn_Signin";
             this.btn_Signin.Size = new System.Drawing.Size(259, 90);
             this.btn_Signin.TabIndex = 4;

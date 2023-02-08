@@ -11,6 +11,7 @@ namespace DeltaTransportApp
     public class nav
     {
         static SigninScreen InlogScherm = new SigninScreen();
+        static aanmeldScreen AanmeldScreen = new aanmeldScreen();
 
         private static void Unload()
         {
@@ -23,6 +24,14 @@ namespace DeltaTransportApp
 
             MainForm.Form1.Controls.Add(InlogScherm);
             InlogScherm.Dock = System.Windows.Forms.DockStyle.Fill;
+        }
+
+        public static void LoadAanmeldScreen()
+        {
+            Unload();
+
+            MainForm.Form1.Controls.Add(AanmeldScreen);
+            AanmeldScreen.Dock = System.Windows.Forms.DockStyle.Fill;
         }
     }
 }
