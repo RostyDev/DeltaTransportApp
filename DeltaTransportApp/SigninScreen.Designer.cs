@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lb_AanmeldPage = new System.Windows.Forms.Label();
             this.btn_Signin = new System.Windows.Forms.Button();
             this.tb_Password = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -63,7 +63,7 @@
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.lb_AanmeldPage);
             this.panel3.Controls.Add(this.btn_Signin);
             this.panel3.Controls.Add(this.tb_Password);
             this.panel3.Controls.Add(this.label2);
@@ -74,14 +74,17 @@
             this.panel3.Size = new System.Drawing.Size(417, 636);
             this.panel3.TabIndex = 2;
             // 
-            // label3
+            // lb_AanmeldPage
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(193, 321);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "label3";
+            this.lb_AanmeldPage.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lb_AanmeldPage.AutoSize = true;
+            this.lb_AanmeldPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_AanmeldPage.Location = new System.Drawing.Point(73, 587);
+            this.lb_AanmeldPage.Name = "lb_AanmeldPage";
+            this.lb_AanmeldPage.Size = new System.Drawing.Size(270, 17);
+            this.lb_AanmeldPage.TabIndex = 5;
+            this.lb_AanmeldPage.Text = "You already have an account? Click here!";
+            this.lb_AanmeldPage.Click += new System.EventHandler(this.lb_AanmeldPage_Click);
             // 
             // btn_Signin
             // 
@@ -91,7 +94,7 @@
             this.btn_Signin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Signin.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Signin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_Signin.Location = new System.Drawing.Point(74, 497);
+            this.btn_Signin.Location = new System.Drawing.Point(76, 484);
             this.btn_Signin.Name = "btn_Signin";
             this.btn_Signin.Size = new System.Drawing.Size(259, 90);
             this.btn_Signin.TabIndex = 4;
@@ -170,6 +173,6 @@
         private System.Windows.Forms.TextBox tb_Nickname;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Signin;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lb_AanmeldPage;
     }
 }

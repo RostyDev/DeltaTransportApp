@@ -29,5 +29,10 @@ namespace DeltaTransportApp
 
             
         }
+
+        private void lb_AanmeldPage_Click(object sender, EventArgs e)
+        {
+            nav.LoadAanmeldScreen();
+        }
     }
 }
