@@ -28,17 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.signinScreen1 = new DeltaTransportApp.SigninScreen();
             this.SuspendLayout();
-            // 
-            // signinScreen1
-            // 
-            this.signinScreen1.BackColor = System.Drawing.Color.Gray;
-            this.signinScreen1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.signinScreen1.Location = new System.Drawing.Point(0, 0);
-            this.signinScreen1.Name = "signinScreen1";
-            this.signinScreen1.Size = new System.Drawing.Size(1137, 597);
-            this.signinScreen1.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -46,7 +36,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1137, 597);
-            this.Controls.Add(this.signinScreen1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "MainForm";
             this.Text = "Delta Transport";
@@ -55,8 +44,6 @@
         }
 
         #endregion
-
-        private SigninScreen signinScreen1;
     }
 }
 

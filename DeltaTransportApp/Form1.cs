@@ -12,9 +12,14 @@ namespace DeltaTransportApp
 {
     public partial class MainForm : Form
     {
+        public static MainForm Form1 = null;
+
         public MainForm()
         {
             InitializeComponent();
+            Form1 = this;
+
+            nav.LoadSignin();
         }
     }
 }

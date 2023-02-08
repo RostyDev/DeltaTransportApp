@@ -10,6 +10,9 @@ namespace DeltaTransportDB
 {
     public class InlogAPI
     {
+        public string Password;
+        public int HashedPassword;
+
         private MySqlConnection Conn;
         public AccountData ActiveAccount = new AccountData();
 
@@ -26,6 +29,11 @@ namespace DeltaTransportDB
             OpenConn();
 
             
+        }
+
+        public void Hash()
+        {
+            HashedPassword = Password.GetHashCode();
         }
     }
 }

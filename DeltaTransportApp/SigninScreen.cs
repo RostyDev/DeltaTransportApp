@@ -22,7 +22,14 @@ namespace DeltaTransportApp
 
         private void btn_Signin_Click(object sender, EventArgs e)
         {
-            SigninAPI.Signin();
+            SigninAPI.Password = tb_Password.Text;
+            SigninAPI.Hash();
+
+            label3.Text = SigninAPI.HashedPassword.ToString();
+
+            //SigninAPI.Signin();
+
+            
         }
     }
 }
