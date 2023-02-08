@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SigninScreen));
             this.panel3 = new System.Windows.Forms.Panel();
             this.lb_AanmeldPage = new System.Windows.Forms.Label();
             this.btn_Signin = new System.Windows.Forms.Button();
@@ -40,36 +39,18 @@
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(362, 636);
-            this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Location = new System.Drawing.Point(791, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(362, 636);
-            this.panel2.TabIndex = 1;
-            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.lb_AanmeldPage);
             this.panel3.Controls.Add(this.btn_Signin);
             this.panel3.Controls.Add(this.tb_Password);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.tb_Nickname);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(368, 0);
+            this.panel3.ForeColor = System.Drawing.Color.Transparent;
+            this.panel3.Location = new System.Drawing.Point(384, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(417, 636);
             this.panel3.TabIndex = 2;
@@ -79,6 +60,7 @@
             this.lb_AanmeldPage.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lb_AanmeldPage.AutoSize = true;
             this.lb_AanmeldPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_AanmeldPage.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lb_AanmeldPage.Location = new System.Drawing.Point(73, 587);
             this.lb_AanmeldPage.Name = "lb_AanmeldPage";
             this.lb_AanmeldPage.Size = new System.Drawing.Size(270, 17);
@@ -152,11 +134,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Name = "SigninScreen";
             this.Size = new System.Drawing.Size(1153, 636);
+            this.Load += new System.EventHandler(this.SigninScreen_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -164,9 +147,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox tb_Password;
         private System.Windows.Forms.Label label2;

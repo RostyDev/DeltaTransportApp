@@ -34,5 +34,10 @@ namespace DeltaTransportApp
         {
             nav.LoadAanmeldScreen();
         }
+
+        private void SigninScreen_Load(object sender, EventArgs e)
+        {
+            panel3.BackColor = Color.FromArgb(150, Color.Black);
+        }
     }
 }
