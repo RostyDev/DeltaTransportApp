@@ -88,5 +88,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DeltaTransportDB\DeltaTransportDB.csproj">
+      <Project>{facf90dd-4077-49fd-8ad9-4a5d5d99afe1}</Project>
+      <Name>DeltaTransportDB</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DeltaTransportDB;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace DeltaTransportApp
 {
     public partial class SigninScreen : UserControl
     {
+        InlogAPI SigninAPI = new InlogAPI();
+
         public SigninScreen()
         {
             InitializeComponent();
@@ -19,7 +22,7 @@ namespace DeltaTransportApp
 
         private void btn_Signin_Click(object sender, EventArgs e)
         {
-
+            SigninAPI.Signin();
         }
     }
 }
