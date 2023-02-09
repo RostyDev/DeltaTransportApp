@@ -52,6 +52,12 @@
     <Compile Include="aanmeldScreen.Designer.cs">
       <DependentUpon>aanmeldScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="ActiveAccountPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActiveAccountPage.Designer.cs">
+      <DependentUpon>ActiveAccountPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     </Compile>
     <EmbeddedResource Include="aanmeldScreen.resx">
       <DependentUpon>aanmeldScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActiveAccountPage.resx">
+      <DependentUpon>ActiveAccountPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

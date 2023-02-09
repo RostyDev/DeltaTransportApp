@@ -58,7 +58,7 @@ namespace DeltaTransportApp
                 tb_Password2.Clear();
                 cb_Age.Text = "";
 
-                
+                nav.LoadActiveuserPage();
             }
             else if (tb_Password1.Text != tb_Password2.Text)
             {

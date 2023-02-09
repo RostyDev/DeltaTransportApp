@@ -12,6 +12,7 @@ namespace DeltaTransportApp
     {
         static SigninScreen InlogScherm = new SigninScreen();
         static aanmeldScreen AanmeldScreen = new aanmeldScreen();
+        static ActiveAccountPage ActiveAccountPage = new ActiveAccountPage();
 
         private static void Unload()
         {
@@ -32,6 +33,14 @@ namespace DeltaTransportApp
 
             MainForm.Form1.Controls.Add(AanmeldScreen);
             AanmeldScreen.Dock = System.Windows.Forms.DockStyle.Fill;
+        }
+
+        public static void LoadActiveuserPage()
+        {
+            Unload();
+
+            MainForm.Form1.Controls.Add(ActiveAccountPage);
+            ActiveAccountPage.Dock = System.Windows.Forms.DockStyle.Fill;
         }
     }
 }

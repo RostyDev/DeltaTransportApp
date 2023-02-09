@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(aanmeldScreen));
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lb_AanmeldPage = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cb_Age = new System.Windows.Forms.ComboBox();
             this.btn_Register = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tb_Nickname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lb_AanmeldPage = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +60,20 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(417, 636);
             this.panel3.TabIndex = 3;
+            // 
+            // lb_AanmeldPage
+            // 
+            this.lb_AanmeldPage.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lb_AanmeldPage.AutoSize = true;
+            this.lb_AanmeldPage.BackColor = System.Drawing.Color.Transparent;
+            this.lb_AanmeldPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_AanmeldPage.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lb_AanmeldPage.Location = new System.Drawing.Point(65, 572);
+            this.lb_AanmeldPage.Name = "lb_AanmeldPage";
+            this.lb_AanmeldPage.Size = new System.Drawing.Size(270, 17);
+            this.lb_AanmeldPage.TabIndex = 31;
+            this.lb_AanmeldPage.Text = "You already have an account? Click here!";
+            this.lb_AanmeldPage.Click += new System.EventHandler(this.lb_AanmeldPage_Click);
             // 
             // label4
             // 
@@ -197,6 +211,7 @@
             this.tb_Password2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Password2.Location = new System.Drawing.Point(24, 213);
             this.tb_Password2.Name = "tb_Password2";
+            this.tb_Password2.PasswordChar = '*';
             this.tb_Password2.Size = new System.Drawing.Size(366, 30);
             this.tb_Password2.TabIndex = 5;
             // 
@@ -220,6 +235,7 @@
             this.tb_Password1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Password1.Location = new System.Drawing.Point(24, 126);
             this.tb_Password1.Name = "tb_Password1";
+            this.tb_Password1.PasswordChar = '*';
             this.tb_Password1.Size = new System.Drawing.Size(366, 30);
             this.tb_Password1.TabIndex = 3;
             // 
@@ -258,20 +274,6 @@
             this.label1.Size = new System.Drawing.Size(105, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nickname:";
-            // 
-            // lb_AanmeldPage
-            // 
-            this.lb_AanmeldPage.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.lb_AanmeldPage.AutoSize = true;
-            this.lb_AanmeldPage.BackColor = System.Drawing.Color.Transparent;
-            this.lb_AanmeldPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_AanmeldPage.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lb_AanmeldPage.Location = new System.Drawing.Point(65, 572);
-            this.lb_AanmeldPage.Name = "lb_AanmeldPage";
-            this.lb_AanmeldPage.Size = new System.Drawing.Size(270, 17);
-            this.lb_AanmeldPage.TabIndex = 31;
-            this.lb_AanmeldPage.Text = "You already have an account? Click here!";
-            this.lb_AanmeldPage.Click += new System.EventHandler(this.lb_AanmeldPage_Click);
             // 
             // aanmeldScreen
             // 
