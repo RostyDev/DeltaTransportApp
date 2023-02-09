@@ -42,7 +42,7 @@
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BackColor = System.Drawing.Color.Gray;
             this.panel3.Controls.Add(this.lb_AanmeldPage);
             this.panel3.Controls.Add(this.btn_Signin);
             this.panel3.Controls.Add(this.tb_Password);
@@ -59,13 +59,14 @@
             // 
             this.lb_AanmeldPage.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lb_AanmeldPage.AutoSize = true;
+            this.lb_AanmeldPage.BackColor = System.Drawing.Color.Transparent;
             this.lb_AanmeldPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_AanmeldPage.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lb_AanmeldPage.Location = new System.Drawing.Point(73, 587);
             this.lb_AanmeldPage.Name = "lb_AanmeldPage";
-            this.lb_AanmeldPage.Size = new System.Drawing.Size(270, 17);
+            this.lb_AanmeldPage.Size = new System.Drawing.Size(277, 17);
             this.lb_AanmeldPage.TabIndex = 5;
-            this.lb_AanmeldPage.Text = "You already have an account? Click here!";
+            this.lb_AanmeldPage.Text = "You don\'t have an account yet? Click here!";
             this.lb_AanmeldPage.Click += new System.EventHandler(this.lb_AanmeldPage_Click);
             // 
             // btn_Signin
@@ -99,6 +100,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkBlue;
             this.label2.Location = new System.Drawing.Point(132, 151);
@@ -121,6 +123,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkBlue;
             this.label1.Location = new System.Drawing.Point(132, 17);

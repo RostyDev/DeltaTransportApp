@@ -25,7 +25,7 @@ namespace DeltaTransportApp
             SigninAPI.Password = tb_Password.Text;
             SigninAPI.Hash();
 
-            //SigninAPI.Signin();
+            
 
             
         }
@@ -37,7 +37,7 @@ namespace DeltaTransportApp
 
         private void SigninScreen_Load(object sender, EventArgs e)
         {
-            panel3.BackColor = Color.FromArgb(150, Color.Black);
+            panel3.BackColor = Color.FromArgb(175, Color.Gray);
         }
     }
 }

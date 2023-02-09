@@ -89,5 +89,15 @@ namespace DeltaTransportApp
                 }
             }
         }
+
+        private void aanmeldScreen_Load(object sender, EventArgs e)
+        {
+            panel3.BackColor = Color.FromArgb(185, Color.Gray);
+        }
+
+        private void lb_AanmeldPage_Click(object sender, EventArgs e)
+        {
+            nav.LoadSignin();
+        }
     }
 }
